@@ -1,10 +1,10 @@
 {
-    "name": "unit-demo-cra",
+    "name": "infrastructure",
     "version": "0.1.0",
-    "homepage": "https://nomoregods.github.io/infrastructure/",
+    "homepage": "https://nomoregods.github.io/infrastructure",
     "private": true,
     "dependencies": {
-        "@commitlint/cli": "^17.6.6",
+        "@babel/core": "^7.22.9",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^14.4.3",
@@ -12,8 +12,6 @@
         "@types/node": "^18.11.9",
         "@types/react": "^18.0.25",
         "@types/react-dom": "^18.0.9",
-        "gh-pages": "^5.0.0",
-        "husky": "^8.0.3",
         "jest-teamcity": "^1.11.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -52,6 +50,14 @@
             "@typescript-eslint/no-unused-vars": "off"
         }
     },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        },
+        "cz-customizable": {
+            "config": "config/git/commitizen.cjs"
+        }
+    },
     "browserslist": {
         "production": [
             ">0.2%",
@@ -65,8 +71,13 @@
         ]
     },
     "devDependencies": {
+        "@commitlint/cli": "^17.6.6",
+        "@octokit/request": "^8.1.0",
         "@playwright/test": "^1.28.0",
         "@types/react-helmet": "^6.1.5",
+        "cz-customizable": "^7.0.0",
+        "gh-pages": "^5.0.0",
+        "husky": "^8.0.3",
         "jest-html-reporter": "^3.7.0"
     }
 }
