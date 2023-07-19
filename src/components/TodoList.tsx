@@ -16,6 +16,8 @@ export const TodoList: FC = () => {
     [dispatch]
   );
 
+  // comment
+
   const onClick = useCallback(() => {
     dispatch(addItem(text));
   }, [dispatch, text]);
