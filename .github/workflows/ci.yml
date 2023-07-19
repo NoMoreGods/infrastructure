@@ -2,7 +2,7 @@ name: tests
 
 on:
     pull_request:
-        branches: ["master"]
+        branches: ["infrastructure"]
         # push:
         # branches: ["master"]
 
@@ -25,4 +25,4 @@ jobs:
             - name: Tests
               run: |
                   npm install
-                  npm run ci:test
+                  npm run test-ci
