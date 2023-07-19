@@ -2,7 +2,7 @@ name: tests
 
 on:
     pull_request:
-        branches: ["master"]
+        branches: ["infrastructure"]
         # push:
         # branches: ["master"]
 
